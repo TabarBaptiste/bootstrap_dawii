@@ -35,6 +35,12 @@ function widgets_dawii() {
         'before_widget' => '<div class="col-md">',
         'after_widget' => '</div>',
     ));
+    register_sidebar(array(
+        'name' => 'Haut de page',
+        'id' => 'sidebar',
+        'before_widget' => '<div class="col-md">',
+        'after_widget' => '</div>',
+    ));
 }
 add_action('widgets_init', 'widgets_dawii');
 
