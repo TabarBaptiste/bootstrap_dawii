@@ -27,3 +27,13 @@ function asrii_pub() {
         get_template_part('/template-parts/partners');
     }
 }
+
+function widgets_dawii() {
+    register_sidebar(array(
+        'name' => 'Base de page',
+        'id' => 'footer',
+        'before_widget' => '<div class="col-md">',
+        'after_widget' => '</div>',
+    ));
+}
+add_action('widgets_init', 'widgets_dawii');

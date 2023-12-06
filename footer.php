@@ -1,15 +1,13 @@
+<?php if(is_active_sidebar('footer')) { ?>
+    <div class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <?php dynamic_sidebar('footer'); ?>
+            </div>
+        </div>
+    </div>
+<?php } ?>
 </body>
 <?php wp_footer(); ?>
 
 </html>
-<style>
-    body {
-        background-color: rgb(20, 20, 20);
-        font-family: Arial, Helvetica, sans-serif;
-        color: white
-    }
-
-    button {
-        color: white !important
-    }
-</style>

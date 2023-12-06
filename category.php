@@ -7,13 +7,14 @@
             while(have_posts()) {
                 the_post(); ?>
 
-                <?php the_title('<h1 class="display-1">', '</h1>'); ?>
+                <?php the_title('<h2 class="lead tw-bold text-body-emphasis">', '</h2>'); ?>
                 <div class="col-lg-6 mx-auto">
-                    <?php the_content(); ?>
+                    <?php the_excerpt(); ?>
 
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
                         <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                        <button  type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                        <a href="" class="btn btn-outline-secondary btn-lg px-4">Secondary  </a>
                     </div>
                 </div>
 
