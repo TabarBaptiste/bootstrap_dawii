@@ -30,12 +30,13 @@
             ; ?>
         <?php } else {
             asrii_error();
+            get_search_form();
         } ?>
 
     </div>
 </div>
 <?php get_footer(); ?>
-<style>
+<!--<style>
     body {
         background-color: rgb(20, 20, 20);
         font-family: Arial, Helvetica, sans-serif;
@@ -45,4 +46,4 @@
     button {
         color: white !important
     }
-</style>
+</style>-->

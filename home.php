@@ -29,20 +29,10 @@
             ; ?>
             <?php echo paginate_links() ?>
         <?php } else {
-            echo '<h1 class="display-4 fw-bold text-body-emphasis text-center">'.__('Erreur 404 url pas trouvée askip');'</h1>';
+            asrii_error();
+            get_search_form();
         } ?>
 
     </div>
 </div>
 <?php get_footer(); ?>
-<style>
-    body {
-        background-color: rgb(20, 20, 20);
-        font-family: Arial, Helvetica, sans-serif;
-        color: white
-    }
-
-    button {
-        color: white !important
-    }
-</style>
