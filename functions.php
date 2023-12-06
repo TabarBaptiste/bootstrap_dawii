@@ -20,3 +20,10 @@ function menu_asrii() {
         'menu-footer' => 'Menu Du footer',
     ));
 }
+
+//Création function encart Pub
+function asrii_pub() {
+    if (is_user_logged_in()){
+        get_template_part('/template-parts/partners');
+    }
+}

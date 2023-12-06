@@ -16,7 +16,8 @@
                         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
                     </div>
                 </div>
-                <?php get_template_part( '/template-parts/partners'); ?>
+
+                ?>
                 <?php if(has_post_thumbnail()): ?>
                     <div class="overflow-hidden" style="max-height: 30vh;">
                         <div class="container px-5">
