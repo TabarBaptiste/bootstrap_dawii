@@ -11,16 +11,6 @@
 
 <body <?php body_class(); ?>>
 
-<?php if(is_active_sidebar('sidebar')) { ?>
-    <div class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <?php dynamic_sidebar('sidebar'); ?>
-            </div>
-        </div>
-    </div>
-<?php } ?>
-
     <?php
     wp_nav_menu(array(
         'menu' => 'menu-header',

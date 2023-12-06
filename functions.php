@@ -1,6 +1,7 @@
 <?php
 function chargementStyle() {
-    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css');
+    wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',[],null,);
+    wp_enqueue_style('style-dawii',get_template_directory_uri().'/style.css',[],null,);
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', [], '5.3.2', false);
 }
 add_action('wp_enqueue_scripts', 'chargementStyle');
@@ -46,4 +47,12 @@ add_action('widgets_init', 'widgets_dawii');
 
 function asrii_error() {
     get_template_part('/template-parts/error');
+}
+
+function size_content($id_sidebar) {
+    if (is_active_sidebar($id_sidebar)) {
+        echo "col-lg-8";
+    } else {
+        echo "col-lg-10 mx-auto";
+    };
 }

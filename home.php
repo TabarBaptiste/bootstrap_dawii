@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container-xl">
     <div class="row">
-        <div class="col-lg-8">
+        <div class="<?php size_content('sidebar'); ?>">
             <div class="px-4 pt-5 my-5 text-center border-bottom">
 
                 <?php if(have_posts()) {
@@ -34,7 +34,13 @@
                     get_search_form();
                 } ?>
             </div>
+
         </div>
+        <?php if(is_active_sidebar('sidebar')) { ?>
+            <div class="col-lg-4">
+                <?php dynamic_sidebar('sidebar'); ?>
+            </div>
+        <?php } ?>
     </div>
 </div>
 <?php get_footer(); ?>

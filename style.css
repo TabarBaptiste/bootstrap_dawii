@@ -2,3 +2,6 @@
 theme name: D@wii 2024
 text domaine: dawii
 */
+.display-1 {
+    font-size: calc(2.745rem + 3.5vw);
+}
