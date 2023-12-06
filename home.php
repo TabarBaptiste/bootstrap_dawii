@@ -7,13 +7,12 @@
             while(have_posts()) {
                 the_post(); ?>
 
-                <?php the_title('<h2 class="lead tw-bold text-body-emphasis">', '</h2>'); ?>
+                <?php the_title('<h1 class="display-1">', '</h1>'); ?>
                 <div class="col-lg-6 mx-auto">
-                    <?php the_excerpt(); ?>
+                    <?php the_content(); ?>
 
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-                        <button  type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                        <a href="<?php the_permalink() ?>" class="btn btn-outline-secondary btn-lg px-4">Secondary </a>
                     </div>
                 </div>
 
@@ -28,8 +27,9 @@
                 <?php endif; ?>
             <?php }
             ; ?>
+            <?php echo paginate_links() ?>
         <?php } else {
-            echo '<h1 class="display-1">Erreur 404 url pas trouvée askip</h1>';
+            echo '<h1 class="display-4 fw-bold text-body-emphasis text-center">'.__('Erreur 404 url pas trouvée askip');'</h1>';
         } ?>
 
     </div>

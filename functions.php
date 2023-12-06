@@ -23,7 +23,7 @@ function menu_asrii() {
 
 //Création function encart Pub
 function asrii_pub() {
-    if (is_user_logged_in()){
+    if(is_user_logged_in()) {
         get_template_part('/template-parts/partners');
     }
 }
@@ -37,3 +37,7 @@ function widgets_dawii() {
     ));
 }
 add_action('widgets_init', 'widgets_dawii');
+
+function asrii_error() {
+    get_template_part('/template-parts/error');
+}

@@ -29,7 +29,7 @@
             <?php }
             ; ?>
         <?php } else {
-            echo '<h1 class="display-1">Erreur 404 url pas trouvée askip</h1>';
+            asrii_error();
         } ?>
 
     </div>
@@ -39,7 +39,7 @@
     body {
         background-color: rgb(20, 20, 20);
         font-family: Arial, Helvetica, sans-serif;
-        color: white
+        color: white !important
     }
 
     button {
