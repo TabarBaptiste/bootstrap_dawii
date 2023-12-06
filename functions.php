@@ -38,8 +38,8 @@ function widgets_dawii() {
     register_sidebar(array(
         'name' => 'Haut de page',
         'id' => 'sidebar',
-        'before_widget' => '<div class="col-md">',
-        'after_widget' => '</div>',
+        'before_widget' => '',
+        'after_widget' => '',
     ));
 }
 add_action('widgets_init', 'widgets_dawii');
